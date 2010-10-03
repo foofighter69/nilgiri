@@ -1,0 +1,19 @@
+     (GUI)        (Állapotok)
+     
+       +---------- (1) START 
+(a) Bemutatás 
+       +---------- (2) Bemutatva
+(b) Szó1 "?"
+       +---------- (3) Szó1 először megkérdezve és tudom
+(c) Szó2 "?"
+       +---------- (4) Szó2 először megkérdezve és tudom
+(d) Szó1 "??"    
+       +---------- (5) Szó1 mégegyszer megkérdezve és tudom
+(e) Szó2 "??"
+       +---------- (6) Szó2 mégegyszer megkérdezve és tudom
+(f) Szó1 "_" [éles]
+       +---------- (7) Szó1 élesben megkérdezve és jó válasz
+(g) Szó2 "_" [éles]
+       +---------- (8) Szó2 élesben megkérdezve és jó válasz
+               
+                   (9) STOP

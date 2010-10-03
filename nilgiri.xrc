@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwindows.org/wxxrc" version="2.3.0.1">
+	<object class="wxDialog" name="nilgiri">
+		<style>wxCAPTION|wxDEFAULT_DIALOG_STYLE</style>
+		<title>Nilgiri v0.2 </title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="spacer">
+				<option>0</option>
+				<flag>wxALIGN_CENTER_HORIZONTAL|wxEXPAND</flag>
+				<border>5</border>
+				<size>400,10</size>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+				<object class="wxStaticText" name="header">
+					<label>Nilgiri - Szótanító program</label>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxStaticBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<label> Nilgiri </label>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<object class="wxTextCtrl" name="SZO1">
+									<style>wxTE_CENTRE|wxTE_PROCESS_ENTER</style>
+									<size>300,-1</size>
+									<value></value>
+									<maxlength>0</maxlength>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<object class="wxTextCtrl" name="SZO2">
+									<style>wxTE_CENTRE|wxTE_PROCESS_ENTER</style>
+									<size>300,-1</size>
+									<value></value>
+									<maxlength>0</maxlength>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="YES">
+							<label>Tudom</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="NO">
+							<enabled>0</enabled>
+							<label>Nem tudom</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>
