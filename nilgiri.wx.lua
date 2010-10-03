@@ -281,7 +281,7 @@ end
 
 	xmlResource = wx.wxXmlResource()
 	xmlResource:InitAllHandlers()
-	xmlResource:Load('noname.xrc')
+	xmlResource:Load('nilgiri.xrc')
 	
 	dialog=wx.wxDialog()
 	xmlResource:LoadDialog(dialog, wx.NULL, "nilgiri") 
@@ -479,7 +479,8 @@ end
 -- függvényben látható legyen a test_wxc!
 
 function callback(event)
-
+	
+	print(event:GetEventType())
 	test_wxc:call(event)
 end	
 
