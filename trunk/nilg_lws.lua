@@ -108,5 +108,8 @@ end
 function LWS:size()
 	return self._ring:size()
 end
+function LWS:setSelectAlgorithm(algorithm)
+	self._ring:setSelectAlgorithm(algorithm)
+end
 
 return LWS

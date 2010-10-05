@@ -77,6 +77,10 @@ function nilg_wxc:displayDialog()
 	self._dialog:Connect(xmlResource.GetXRCID("SZO1"), wx.wxEVT_COMMAND_TEXT_ENTER, self._callback)
 	self._dialog:Connect(xmlResource.GetXRCID("SZO2"), wx.wxEVT_COMMAND_TEXT_ENTER, self._callback)
 	
+	--self._dialog:Connect(xmlResource.GetXRCID("MAIN"), wx.wxEVT_KEY_DOWN, function(e) 
+	--	print(e:GetKeyCode(e)) 
+	--end )
+	
 	
 	
 	self._dialog:Centre()
@@ -149,14 +153,25 @@ function nilg_wxc:call(event)
 		-- feldolgozas --
 		if prevItem then
 			
-			if prevItem.state >= 6 then
+			if prevItem.state >= 6 and self._check then
 				
 				direction = self:checkAnswer(prevItem)
+				
 				if direction == "no" then
-					self:setSkipped(false)
+					if prevItem.state == 6 then
+					print("[*] Bad answer: "..prevItem.entry.szo2.. " / "..self.gui.szo1:GetValue())
+					elseif prevItem.state == 7 then
+					print("[*] Bad answer: "..prevItem.entry.szo1.. "/"..self.gui.szo2:GetValue())
+					end
+					self:setSkipped(true)
+					self._check = false
 					self:display(self:getItem(), "BadAnswer")
 					return 
+				else
+					print("[*] Good answer: "..prevItem.entry.szo1.." : "..prevItem.entry.szo2)
 				end
+				
+				self._check = true
 			else
 				direction = self:getEvent(event)
 			end
@@ -164,12 +179,13 @@ function nilg_wxc:call(event)
 		
 		self._lws:stateChange(direction) 
 		end
+		self._check = true
  		-- kiiras --
 		item = self._lws:next()	
 		
 		if item==nil then 
 			print('Item can\'t be nil, only when there is no more element') 
-			self.gui.header:SetLabel('Gratulálok! Mivel ez egy tesztverzió ezért most kapcsolja ki. :D')
+			self.gui.header:SetLabel('Gratulálok! A tesztverzió véget ért.')
 		end
 
 		--print(tostring(item.state)..'~', item.entry.szo1)
@@ -181,6 +197,7 @@ function nilg_wxc:call(event)
 		
 	else
 		self:setSkipped(false)
+		self._check=false
 		self:display(self:getItem(), "BadAnswer")
 		
 	end
@@ -212,6 +229,8 @@ function setup()
 	table.insert(le, { szo1 = "He can talk away for hours.", szo2 = "Órákig el tud fecsegni." })
 	
 	test_lws = LWS:new()
+	test_lws:setSelectAlgorithm('random')
+	
 	test_fsm = FSM:new()
 
 	allapot_atmenetek = {
