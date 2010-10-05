@@ -8,11 +8,11 @@
         <property name="encoding">UTF-8</property>
         <property name="event_generation">connect</property>
         <property name="event_handler">impl_virtual</property>
-        <property name="file"></property>
+        <property name="file">nilgiri.xrc</property>
         <property name="first_id">1000</property>
         <property name="help_provider">none</property>
         <property name="internationalize">0</property>
-        <property name="name">MyProject3</property>
+        <property name="name">NilgiriGUI</property>
         <property name="namespace"></property>
         <property name="path">.</property>
         <property name="precompiled_header"></property>
@@ -28,7 +28,7 @@
             <property name="fg"></property>
             <property name="font"></property>
             <property name="hidden">0</property>
-            <property name="id">wxID_ANY</property>
+            <property name="id">MAIN</property>
             <property name="maximum_size"></property>
             <property name="minimum_size"></property>
             <property name="name">nilgiri</property>
@@ -36,7 +36,7 @@
             <property name="size">-1,-1</property>
             <property name="style">wxCAPTION|wxDEFAULT_DIALOG_STYLE</property>
             <property name="subclass"></property>
-            <property name="title">Nilgiri v0.2 </property>
+            <property name="title">Nilgiri v0.2.1</property>
             <property name="tooltip"></property>
             <property name="validator_data_type"></property>
             <property name="validator_style">wxFILTER_NONE</property>
