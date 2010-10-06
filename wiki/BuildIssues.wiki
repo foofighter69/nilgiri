@@ -1,0 +1,9 @@
+#summary wxLua 2.8.10.0 builds
+
+= Introduction =
+
+My goal is to build wxLua with normal utf8 display.
+
+
+= Details =
+
