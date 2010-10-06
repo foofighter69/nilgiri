@@ -9,14 +9,17 @@ My goal is to build wxLua with normal utf8 display. The official build is perfec
 
 Available wxLua builds for windows:
 
-[1] Official build, http://downloads.sourceforge.net/wxlua/wxLua-2.8.10.0-MSW-bin.zip
-[2] Bagheadspidey's build, http://baghead.drdteam.org/apps/doomcrap-0.1.4.zip?nocache1
-[3] My wxLua 2.8.10.0 mingw build 
+ *  [1] Official build, http://downloads.sourceforge.net/wxlua/wxLua-2.8.10.0-MSW-bin.zip
+ *  [2] Bagheadspidey's build, http://baghead.drdteam.org/apps/doomcrap-0.1.4.zip?nocache1
+ *  [3] My wxLua 2.8.10.0 mingw build 
 
-    | label | xrc | txtctrl input |
-[1] |   a   |  a  |       a       |
-[2] |   u   |  a  |       a       |
-[3] |   a   |  u  |       a       |
+
+
+||    || label || xrc || txtctrl input ||
+||[1] ||   a   ||  a  ||       a       ||
+||[2] ||   u   ||  a  ||       a       ||
+||[3] ||   a   ||  u  ||       a       ||
 
 where a:ascii and u:utf8 means the displayed utf8 text format
 
+----
