@@ -21,7 +21,8 @@ Available wxLua builds for windows:
 ||(3) ||   a   ||  u  ||       a       ||
 
 where a:ascii and u:utf8 means the displayed utf8 text format
-
+----
+mingw32-make -f makefile.gcc WXWIN=D:\wxWidgets UNICODE=1 DEBUG=1
 ----
 cd d:\wxLua\modules\build\msw\
 
