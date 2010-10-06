@@ -9,10 +9,10 @@ My goal is to build wxLua with normal utf8 display. The official build is perfec
 
 Available wxLua builds for windows:
 
- *  (1) [Official build http://downloads.sourceforge.net/wxlua/wxLua-2.8.10.0-MSW-bin.zip]
- *  (2) [Bagheadspidey's build http://baghead.drdteam.org/apps/doomcrap-0.1.4.zip?nocache1]
+ *  (1) [http://downloads.sourceforge.net/wxlua/wxLua-2.8.10.0-MSW-bin.zip Latest official build]
+ *  (2) [http://baghead.drdteam.org/apps/doomcrap-0.1.4.zip?nocache1 Bagheadspidey's build ]
  *  (3) My wxLua 2.8.10.0 80MB mingw-unicode-debug build 
- *  (4) [wxLua-2.8.7.0-MSW-bin http://switch.dl.sourceforge.net/project/wxlua/wxlua/2.8.7.0/wxLua-2.8.7.0-MSW-bin.zip], b174fa10414380dade17692f21f381df
+ *  (4) [http://switch.dl.sourceforge.net/project/wxlua/wxlua/2.8.7.0/wxLua-2.8.7.0-MSW-bin.zip wxLua-2.8.7.0-MSW-bin], b174fa10414380dade17692f21f381df
 
 
 
