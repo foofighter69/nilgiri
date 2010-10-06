@@ -20,6 +20,7 @@ Available wxLua builds for windows:
 ||(1) ||   a   ||  a  ||       a       ||
 ||(2) ||   u   ||  a  ||       a       ||
 ||(3) ||   a   ||  u  ||       a       ||
+||(4) ||   u   ||  a  ||       u       ||
 
 where a:ascii and u:utf8 means the displayed utf8 text format
 ----
