@@ -9,17 +9,21 @@ My goal is to build wxLua with normal utf8 display. The official build is perfec
 
 Available wxLua builds for windows:
 
- *  [1] Official build, http://downloads.sourceforge.net/wxlua/wxLua-2.8.10.0-MSW-bin.zip
- *  [2] Bagheadspidey's build, http://baghead.drdteam.org/apps/doomcrap-0.1.4.zip?nocache1
- *  [3] My wxLua 2.8.10.0 mingw build 
+ *  (1) Official build, http://downloads.sourceforge.net/wxlua/wxLua-2.8.10.0-MSW-bin.zip
+ *  (2) Bagheadspidey's build, http://baghead.drdteam.org/apps/doomcrap-0.1.4.zip?nocache1
+ *  (3) My wxLua 2.8.10.0 mingw build 
 
 
 
 ||    || label || xrc || txtctrl input ||
-||[1] ||   a   ||  a  ||       a       ||
-||[2] ||   u   ||  a  ||       a       ||
-||[3] ||   a   ||  u  ||       a       ||
+||(1) ||   a   ||  a  ||       a       ||
+||(2) ||   u   ||  a  ||       a       ||
+||(3) ||   a   ||  u  ||       a       ||
 
 where a:ascii and u:utf8 means the displayed utf8 text format
 
 ----
+cd d:\wxLua\modules\build\msw\
+{{{
+g++ -o ..\..\..\bin\gcc_lib\wxlua.exe gccmswud\app_wxlua_lconsole.o gccmswud\app_wxlua_wxlua.o gccmswud\app_wxlua_wxlua_rc.o  -mthreads -Ld:\wxWidgets\lib\gcc_lib -g -mthreads -L..\..\..\lib\gcc_lib -L..\..\..\modules\lua\lib -Wl,--subsystem,windows -mwindows  -lwxlua_msw28ud_wxluasocket -lwxlua_msw28ud_wxluadebug -lwxlua_msw28ud_wxbindadv -lwxlua_msw28ud_wxbindaui -lwxlua_msw28ud_wxbindbase -lwxlua_msw28ud_wxbindcore -lwxlua_msw28ud_wxbindgl -lwxlua_msw28ud_wxbindhtml -lwxlua_msw28ud_wxbindmedia -lwxlua_msw28ud_wxbindnet -lwxlua_msw28ud_wxbindstc -lwxlua_msw28ud_wxbindxml -lwxlua_msw28ud_wxbindxrc -lwxlua_msw28ud_wxlua -llua5.1 -lwxmsw28ud_stc -lwxmsw28ud_xrc -lwxmsw28ud_html -lwxmsw28ud_gl -lwxmsw28ud_aui -lwxmsw28ud_media -lwxmsw28ud_adv -lwxbase28ud_net -lwxbase28ud_xml -lwxmsw28ud_core -lwxbase28ud -lwxtiffd -lwxjpegd -lwxpngd -lwxzlibd -lwxregexud -lwxexpatd -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lwsock32 -lodbc32
+}}}
