@@ -1,0 +1,17 @@
+#summary A nilgiri továbbfejlesztésével kapcsolatos ötletek
+
+= Bevezetés =
+
+Tesztesetként egy állatrendszertan zárthelyire történő felkészülést tekintek. A zárthelyi tartalmazza a felismerést, a latin nevezéktant és a besorolást. A cél az, hogy a felkészülés minél hatékonyabban történjen nilgirivel. 
+
+= Részletek =
+
+Zárthelyire készülés felbontása:
+
+  * (1) Latin-magyar nevek tanulása
+  * (2) Felismerés gyakorlása
+  * (3) Besorolás gyakorlása
+
+A latin-magyar nevek tanulásához bőven elegendő a nilgiri jelenlegi(v0.2) tudása. A felismerés már problemásabb, mert hiába tanulja meg az ember a kép-fajnév hozzárendelést, ha más képet mutatnak, annak felismerése ritkán sikerül. A besorolás a nilgirivel még nem megoldható, mert ez egy sajátos adattípust igényel, ami még nincs kidolgozva.
+
+Pl.: Melyik rendbe tartozik a _Lithoglyphus naticoides_ ? vagy milyen nemzetséghez tartozik a _Galba truncatula_?
