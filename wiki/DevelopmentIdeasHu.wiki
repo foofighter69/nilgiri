@@ -22,4 +22,4 @@ Ha például a kőrisfát kell felismerni, hiába ismered fel lombkoronáról, h
 
 == 3. Besorolás ==
 
-Míg a _latin név_ <---> _fajnév_ egymáshoz rendelés viszonylag egyszerűbb adattípus, addig a _Törzs_ > _Osztály_ > _Alosztály_ > _Rend_ > _Nemzetség_ > _Faj_ már egy hierarchikus adattípus
+Míg a _latin név_ = _fajnév_ egymáshoz rendelés viszonylag egyszerűbb adattípus, addig a _Törzs_ > _Osztály_ > _Alosztály_ > _Rend_ > _Nemzetség_ > _Faj_ már egy hierarchikus adattípus
