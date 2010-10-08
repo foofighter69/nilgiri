@@ -14,4 +14,12 @@ Zárthelyire készülés felbontása:
 
 A latin-magyar nevek tanulásához bőven elegendő a nilgiri jelenlegi(v0.2) tudása. A felismerés már problemásabb, mert hiába tanulja meg az ember a kép-fajnév hozzárendelést, ha más képet mutatnak, annak felismerése ritkán sikerül. A besorolás a nilgirivel még nem megoldható, mert ez egy sajátos adattípust igényel, ami még nincs kidolgozva.
 
-Pl.: Melyik rendbe tartozik a _Lithoglyphus naticoides_ ? vagy milyen nemzetséghez tartozik a _Galba truncatula_?
+Pl.: Melyik rendbe tartozik a _Lithoglyphus naticoides_ ? Milyen nemzetséghez tartozik a _Galba truncatula_? stb...
+
+== 2. Felismerés ==
+
+Ha például a kőrisfát kell felismerni, hiába ismered fel lombkoronáról, ha levelet mutatnak. 
+
+== 3. Besorolás ==
+
+Míg a _latin név_ <-> _fajnév_ egymáshoz rendelés viszonylag egyszerűbb adattípus, addig a _Törzs_ > _Osztály_ > _Alosztály_ > _Rend_ > _Nemzetség_ > _Faj_ már egy hierarchikus adattípus
