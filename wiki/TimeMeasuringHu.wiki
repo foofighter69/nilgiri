@@ -1,0 +1,10 @@
+#summary A megválaszolás idejének figyelése
+
+= Bevezetés =
+
+Az idő mérése kritikus lehet mondjuk a dalszöveg tanulásnál.
+
+
+= Részletek =
+
+A megválaszolás idejének mérésével új paramétert kapunk, amit fel lehet használni a válasz elfogadásánál. Itt gondolok arra, hogy a dalszöveg sorok karakterarányos időhossz limittel rendelkeznek és csak azok kerülnek elfogadásra, amik ez alatt vannak.
